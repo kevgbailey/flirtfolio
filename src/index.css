@@ -12,8 +12,34 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  margin: 0px;
 }
 
 h1{
-  float: left
+  background-color:rgba(9, 5, 57, 0.87);
+  color: #ddd;
+  width: 100%;
+  padding: 0px;
+}
+
+.actualDot{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotObject{
+  display: flex;
+  flex-direction: row;
+}
+
+.dotView{
+display: flex;
+flex-direction: column;
+}
+
+.app{
+  display:flex;
+  flex-direction: column;
 }
