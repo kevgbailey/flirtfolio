@@ -10,7 +10,7 @@ const testUser = {
   lastName: 'Bailey',
   id: 1234,
   dots: [{
-    color: "grey",
+    color: "#AAAAAA",
     name: {
         firstName: "Kevin",
         lastName: "Young"
@@ -18,7 +18,7 @@ const testUser = {
     numOfDates: 1,
     },
     {
-      color: "yellow",
+      color: "#FFF171",
       name: {
           firstName: "Jamie",
           lastName: "Bailey"
@@ -26,7 +26,7 @@ const testUser = {
       numOfDates: 109,
       },
       {
-        color: "lightblue",
+        color: "#005358",
         name: {
             firstName: "Savannah",
             lastName: "Bjorkman"
@@ -40,12 +40,14 @@ const testUser = {
               lastName: "Doe"
           },
           numOfDates: 420,
-          }
+        }
   ]
 }
   return (
     <div className="App">
-      <h1>FlirtFolio</h1>
+      <div className = "header">
+      <h1>{testUser.firstName} {testUser.lastName}'s FlirtFolio</h1>
+      </div>
       <p className = "welcomeBanner" >Welcome, {testUser.firstName} {testUser.lastName}!</p>
         <hr></hr>
        <DotView user = {testUser}/>

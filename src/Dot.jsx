@@ -11,8 +11,11 @@ class Dot extends React.Component{
         return(
             <div className = "dotObject">
         <span className = "actualDot" style = {{backgroundColor: color}}></span>
+        <div className ="dotInformation">
         <p className = "dotName">{firstName} {lastName}</p>
-          </div>
+        <p className = "lastDate">Number of Dates: {numOfDates}</p>
+        </div>
+        </div>
         );
 
     }

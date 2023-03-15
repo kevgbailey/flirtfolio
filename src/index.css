@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(31, 31, 31, 0.87);
-  background-color: #dddddd;
+  background-color: #fafafa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,13 +19,12 @@ body{
 }
 
 h1{
-  background-color:rgba(9, 5, 57, 0.87);
-  color: #ddd;
+  background-color:#003058;
+  color: rgb(243, 243, 243);
   width: 100%;
   padding: 12px;
   margin-top: 0px;
   text-align: center;
-
 }
 
 .actualDot{
@@ -40,11 +39,12 @@ h1{
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-right: 100px;
+  padding: 10px;
 }
 .dotName{
   padding-left: 10px;
-  color: black;
+  color: rgb(0, 0, 0);
+  margin: 0px;
 }
 
 .dotView{
@@ -61,4 +61,15 @@ padding-left: 20px;
 .welcomeBanner{
   margin-left: 22px;
   font-weight: bold;
+}
+
+.dotInformation{
+  display: flex;
+  flex-direction: column;
+}
+
+.lastDate{
+  font-size: 10px;
+  padding-left: 10px;
+  margin: 0px;
 }
