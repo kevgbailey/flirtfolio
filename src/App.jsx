@@ -2,47 +2,25 @@ import { useReducer, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import DotView from './DotView.jsx'
+import testUser from './testUser.json';
 
 function App() {
-let testProps = {firstName: "Kevin", lastName: "Bailey"};
-const testUser = {
-  firstName: 'Kevin',
-  lastName: 'Bailey',
-  id: 1234,
-  dots: [{
-    color: "#AAAAAA",
-    name: {
-        firstName: "Kevin",
-        lastName: "Young"
-    },
-    numOfDates: 1,
-    },
-    {
-      color: "#FFF171",
-      name: {
-          firstName: "Jamie",
-          lastName: "Bailey"
-      },
-      numOfDates: 109,
-      },
-      {
-        color: "#005358",
-        name: {
-            firstName: "Savannah",
-            lastName: "Bjorkman"
-        },
-        numOfDates: 15,
-        },
-        {
-          color: "green",
-          name: {
-              firstName: "Jane",
-              lastName: "Doe"
-          },
-          numOfDates: 420,
-        }
-  ]
-}
+  function findNumOfDots(color, array){
+    let numOfDots = 0;
+    for(let i = 0; i < array.length; i++){
+      if(array[i].color === color){
+        numOfDots++;
+      }
+    }
+    return numOfDots;
+  }
+  
+  testUser.numOfGreenDots = findNumOfDots("green", testUser.dots);
+  testUser.numOfGreyDots = findNumOfDots("#AAAAAA", testUser.dots);
+  testUser.numOfYellowDots = findNumOfDots("#FFF171", testUser.dots);
+  testUser.hasBlueDot = true;
+  console.log(testUser);
+
   return (
     <div className="App">
       <div className = "header">

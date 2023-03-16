@@ -1,0 +1,45 @@
+{
+    "firstName": "Kevin",
+    "lastName": "Bailey",
+    "id": 1234,
+    "gender": "male",
+    "numOfGreenDots": 0,
+    "numOfGreyDots": 0,
+    "numOfYellowDots": 0,
+    "hasBlueDot": true,
+    "dots": [
+      {
+        "color": "#AAAAAA",
+        "name": {
+          "firstName": "Kevin",
+          "lastName": "Young"
+        },
+        "numOfDates": 1
+      },
+      {
+        "color": "#FFF171",
+        "name": {
+          "firstName": "Jamie",
+          "lastName": "Bailey"
+        },
+        "numOfDates": 109
+      },
+      {
+        "color": "#005358",
+        "name": {
+          "firstName": "Savannah",
+          "lastName": "Bjorkman"
+        },
+        "numOfDates": 15
+      },
+      {
+        "color": "green",
+        "name": {
+          "firstName": "Jane",
+          "lastName": "Doe"
+        },
+        "numOfDates": 420
+      }
+    ]
+  }
+  
