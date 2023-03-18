@@ -18,13 +18,30 @@ body{
   margin: 0px;
 }
 
-h1{
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color:#003058;
   color: rgb(243, 243, 243);
   width: 100%;
   padding: 12px;
   margin-top: 0px;
   text-align: center;
+}
+
+a{
+ padding-left: 50px;
+ color: white;
+ font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ text-decoration: none;
+ font-weight: 700;
+ right: 0px;
+ font-size: 28px;
+}
+a:hover{
+  color: pink;
+  text-decoration: underline;
 }
 
 .actualDot{
