@@ -25,17 +25,22 @@ function App() {
     <>
     <div className="App">
       <div className = "header">
-      <h1>{testUser.firstName} {testUser.lastName}'s FlirtFolio</h1>
+      <h1><Link to = "/">{testUser.firstName} {testUser.lastName}'s FlirtFolio</Link></h1>
       <Link to = "/about" className = "aboutClick">About</Link>
       </div>
       <p className = "welcomeBanner" >Welcome, {testUser.firstName} {testUser.lastName}!</p>
         <hr></hr>
-       <DotView user = {testUser}/>
+       {/* <DotView user = {testUser}/> */}
     </div>
 
     <Routes>
-    <Route path = '/about' element = {<AboutPage/>}/>
-    </Routes>
+      <Route path="/" element={<DotView user={testUser} />} />
+      <Route path="/about" element={<AboutPage />} />
+   </Routes>
+
+   <footer className = "footer">
+      Kevin Bailey & Kevin Young, 2023
+   </footer>
     </>
   )
 }
