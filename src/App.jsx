@@ -3,6 +3,7 @@ import DotView from './DotView.jsx'
 import testUser from './testUser.json';
 import { Route, Routes, Link } from "react-router-dom"
 import AboutPage from './AboutPage.jsx';
+import DotPage from './DotPage.jsx';
 
 function App() {
   function findNumOfDots(color, array){
@@ -25,21 +26,20 @@ function App() {
     <>
     <div className="App">
       <div className = "header">
-      <h1><Link to = "/">{testUser.firstName} {testUser.lastName}'s FlirtFolio</Link></h1>
-      <Link to = "/about" className = "aboutClick">About</Link>
+      <h1><Link to = "/" className = "title">{testUser.firstName} {testUser.lastName}'s FlirtFolio</Link></h1>
+      <Link to = "/about" className = "title">About</Link>
       </div>
-      <p className = "welcomeBanner" >Welcome, {testUser.firstName} {testUser.lastName}!</p>
-        <hr></hr>
        {/* <DotView user = {testUser}/> */}
     </div>
 
     <Routes>
       <Route path="/" element={<DotView user={testUser} />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path = "/dot/:dotId" render={({ match }) => <DotPage dotId={match.params.dotId}/>}/>
    </Routes>
 
    <footer className = "footer">
-      Kevin Bailey & Kevin Young, 2023
+   <p>Created by <span><a href="https://github.com/kevgbailey" className="footerGitLinks">Kevin Bailey</a></span> & <span><a href="https://github.com/kevinisyoung" className="footerGitLinks">Kevin Young</a></span>, 2023</p>
    </footer>
     </>
   )

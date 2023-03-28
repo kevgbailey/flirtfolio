@@ -30,7 +30,7 @@ body{
   text-align: center;
 }
 
-a{
+a.title{
  padding-left: 50px;
  color: white;
  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -39,7 +39,7 @@ a{
  right: 0px;
  font-size: 28px;
 }
-a:hover{
+a.title:hover{
   color: pink;
   text-decoration: underline;
 }
@@ -62,6 +62,13 @@ a:hover{
   padding-left: 10px;
   color: rgb(0, 0, 0);
   margin: 0px;
+  
+}
+.dotLink{
+  text-decoration: none;
+}
+.dotLink:hover{
+  text-decoration: underline;
 }
 
 .dotView{
@@ -78,6 +85,10 @@ padding-left: 20px;
 .welcomeBanner{
   margin-left: 22px;
   font-weight: bold;
+  background-color: rgb(242, 242, 242);
+  padding: 10px;
+  margin: 0px;
+  padding-left: 30px;
 }
 
 .dotInformation{
@@ -98,9 +109,24 @@ padding-left: 20px;
 }
 
 .footer{
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background: #003057;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
   color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100px;
+  align-items: center;
+  height: 30px;
+}
+
+.footerGitLinks{
+  text-decoration: none;
+  color: white;
+  display: inline;
+  font-weight: bold;
+}
+.footerGitLinks:hover{
+  color: pink;
 }

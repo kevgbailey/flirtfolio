@@ -14,7 +14,8 @@
           "firstName": "Kevin",
           "lastName": "Young"
         },
-        "numOfDates": 1
+        "numOfDates": 1,
+        "id": 1
       },
       {
         "color": "#FFF171",
@@ -22,7 +23,8 @@
           "firstName": "Jamie",
           "lastName": "Bailey"
         },
-        "numOfDates": 109
+        "numOfDates": 109,
+        "id": 2
       },
       {
         "color": "#005358",
@@ -30,7 +32,8 @@
           "firstName": "Savannah",
           "lastName": "Bjorkman"
         },
-        "numOfDates": 15
+        "numOfDates": 15,
+        "id": 3
       },
       {
         "color": "green",
@@ -38,7 +41,8 @@
           "firstName": "Jane",
           "lastName": "Doe"
         },
-        "numOfDates": 420
+        "numOfDates": 420,
+        "id": 4
       }
     ]
   }
